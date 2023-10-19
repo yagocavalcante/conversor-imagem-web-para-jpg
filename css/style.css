@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 20px;
+  }
+
+  h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  input[type="file"],
+  button {
+    margin-bottom: 10px;
+  }
+
+  #preview {
+    max-width: 400px;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f2f2f2;
+    color: #666;
+    font-weight: normal;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  /* Animação do botão Converter */
+  @keyframes convertButtonAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .convert-button {
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+  }
+
+  .convert-button:focus {
+    outline: none;
+  }
+
+  .convert-button:active {
+    animation-name: convertButtonAnimation;
+  }
+
+  .delete-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 4px 8px;
+    font-size: 14px;
+    cursor: pointer;
+  }

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Conversor de Imagem Web para JPEG</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Conversor de Imagem Web para JPEG</h1>
+  <input type="file" id="image-upload" accept="image/*">
+  <button onclick="convertToJPEG()" class="convert-button">Converter</button>
+  <hr>
+  <h2>Tabelas de Downloads:</h2>
+  <table id="download-table">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Link</th>
+        <th>Ação</th>
+      </tr>
+    </thead>
+    <tbody id="download-table-body"></tbody>
+  </table>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chance/1.1.7/chance.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
